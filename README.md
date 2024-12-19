@@ -75,6 +75,22 @@ Le fichier Excel d'entrée doit contenir :
 ### Fonctions principales
 
 - Select_Data() : Sélection et préparation des données
+  La fonction Select_Diff identifie les protéines ou peptides différentiellement exprimés
+  en fonction des données de log2 fold-change (log2FC) et de p-value. Elle retourne un tableau 
+  contenant les informations fusionnées avec les métadonnées, et classe les entrées en trois 
+  catégories : UP (surexprimées), DOWN (sous-exprimées) ou NO (non significatives) selon des 
+  seuils définis par l'utilisateur (cutoff.fc et cutoff.pv).
+
+ Paramètres :
+   - log2FC : Dataframe contenant les valeurs log2 fold-change.
+   - pvalue : Dataframe contenant les p-values correspondantes.
+   - metadata : Tableau contenant les métadonnées des protéines/peptides.
+   - condition : Nom de la condition d'intérêt (par défaut : "Crush+shControl : Control").
+   - cutoff.fc : Seuil pour log2 fold-change (par défaut : 1.8).
+   - cutoff.pv : Seuil pour les p-values (par défaut : 0.05).
+   
+ Retourne :
+   - Un dataframe annoté avec les colonnes fusionnées et une classification des directions (UP, DOWN, NO).
 - Select_Diff() : Analyse différentielle
 - Plot_Volcano() : Création des volcano plots
 - Make_Rpos_Consensus() : Analyse du consensus RSK2
