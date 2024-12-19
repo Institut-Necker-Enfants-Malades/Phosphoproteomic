@@ -75,6 +75,7 @@ Le fichier Excel d'entrée doit contenir :
 ### Fonctions principales
 
 1. Conditions_Selection()
+
 **Description** : Permet d'afficher les conditions disponibles et demander une sélection pour eviter les erreurs de frappes.
 
 **Paramètres** :
