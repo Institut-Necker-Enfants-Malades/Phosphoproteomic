@@ -74,7 +74,7 @@ Le fichier Excel d'entrée doit contenir :
 
 ### Fonctions principales
 
-### 1. Conditions_Selection()
+1. Conditions_Selection()
 **Description** : Permet d'afficher les conditions disponibles et demander une sélection pour eviter les erreurs de frappes.
 
 **Paramètres** :
@@ -145,10 +145,6 @@ Le fichier Excel d'entrée doit contenir :
 - Les fonctions sont conçues pour être utilisées séquentiellement dans l'analyse
 - Les paramètres par défaut sont optimisés pour l'analyse RSK2 mais peuvent être ajustés
 - La visualisation peut être personnalisée via les paramètres des fonctions de plotting
-- Select_Diff() : Analyse différentielle
-- Plot_Volcano() : Création des volcano plots
-- Make_Rpos_Consensus() : Analyse du consensus RSK2
-- Plot_logo() : Création des logos de séquence
 
 ## Notes importantes
 
