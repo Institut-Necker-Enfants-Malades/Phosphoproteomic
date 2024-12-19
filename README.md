@@ -89,7 +89,7 @@ Make_Rpos_Consensus()
 #Description : Analyse les séquences peptidiques pour identifier le motif consensus RSK2 (RXRXXS*/T*).
 
 Plot_logo()
-Description : Crée une visualisation de logo pour les motifs de séquence.
+#Description : Crée une visualisation de logo pour les motifs de séquence.
 
 ### Notes d'utilisation
 #- Les fonctions sont conçues pour être utilisées séquentiellement dans l'analyse
