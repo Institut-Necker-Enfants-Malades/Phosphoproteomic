@@ -74,7 +74,8 @@ Le fichier Excel d'entrée doit contenir :
 
 ### Fonctions principales
 
-1. Conditions_Selection()
+```R
+### 1. Conditions_Selection()
 
 **Description** : Permet d'afficher les conditions disponibles et demander une sélection pour eviter les erreurs de frappes.
 
@@ -146,7 +147,7 @@ Le fichier Excel d'entrée doit contenir :
 - Les fonctions sont conçues pour être utilisées séquentiellement dans l'analyse
 - Les paramètres par défaut sont optimisés pour l'analyse RSK2 mais peuvent être ajustés
 - La visualisation peut être personnalisée via les paramètres des fonctions de plotting
-
+```
 ## Notes importantes
 
 - Les seuils de significance peuvent être ajustés (cutoff.pv et cutoff.fc)
