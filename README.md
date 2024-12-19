@@ -75,26 +75,26 @@ Le fichier Excel d'entrée doit contenir :
 ### Fonctions principales
 
 ```R
-### 1. Conditions_Selection()
+Conditions_Selection()
 
 #Description : Permet d'afficher les conditions disponibles et demander une sélection pour eviter les erreurs de frappes.
 
-### 2. Select_Diff()
-Description : Identifie les protéines/peptides différentiellement exprimés basé sur le log2 fold-change et la p-value.
+Select_Diff()
+#Description : Identifie les protéines/peptides différentiellement exprimés basé sur le log2 fold-change et la p-value.
 
-### 2. Plot_Volcano()
-Description : Génère un volcano plot pour visualiser les changements d'expression.
+Plot_Volcano()
+#Description : Génère un volcano plot pour visualiser les changements d'expression.
 
-### 3. Make_Rpos_Consensus()
-Description : Analyse les séquences peptidiques pour identifier le motif consensus RSK2 (RXRXXS*/T*).
+Make_Rpos_Consensus()
+#Description : Analyse les séquences peptidiques pour identifier le motif consensus RSK2 (RXRXXS*/T*).
 
-### 4. Plot_logo()
+Plot_logo()
 Description : Crée une visualisation de logo pour les motifs de séquence.
 
 ### Notes d'utilisation
-- Les fonctions sont conçues pour être utilisées séquentiellement dans l'analyse
-- Les paramètres par défaut sont optimisés pour l'analyse RSK2 mais peuvent être ajustés
-- La visualisation peut être personnalisée via les paramètres des fonctions de plotting
+#- Les fonctions sont conçues pour être utilisées séquentiellement dans l'analyse
+#- Les paramètres par défaut sont optimisés pour l'analyse RSK2 mais peuvent être ajustés
+#- La visualisation peut être personnalisée via les paramètres des fonctions de plotting
 ```
 ## Notes importantes
 
