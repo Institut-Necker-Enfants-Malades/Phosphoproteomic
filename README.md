@@ -75,11 +75,11 @@ Le fichier Excel d'entrée doit contenir :
 ### Fonctions principales
 
 ```R
-### 1. Conditions_Selection()
+#1. Conditions_Selection()
 
-**Description** : Permet d'afficher les conditions disponibles et demander une sélection pour eviter les erreurs de frappes.
+#Description : Permet d'afficher les conditions disponibles et demander une sélection pour eviter les erreurs de frappes.
 
-**Paramètres** :
+Paramètres :
 - `log2FC` : Dataframe des valeurs log2 fold-change
 - `pvalue` : Dataframe des p-values correspondantes
 
