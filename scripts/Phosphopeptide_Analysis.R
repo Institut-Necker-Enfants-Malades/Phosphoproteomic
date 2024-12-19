@@ -34,7 +34,7 @@ install_if_missing(required_packages)
 
 # ============================================================================== Functions ===================================================================================================================#
 
-source("/Users/lamine/INEM/Projets/Mario/RSK2_analysis/scripts/Util_Phospo.R")
+source("scripts/Util_Phospo.R")
 # Les fonction presentes dans le fichier Util.R :
 
 #===============================================================================  Select_Diff()
@@ -141,7 +141,7 @@ colorLookup <- c(selTable = "#4DBBD5FF", selPlot = "#00A087FF", selPFC = "#E64B3
 
 # ======================================================================  Charger et processer les donnees  =================================================================================================##
 # Charger le tableau 
-Table1_INSERM_00052349_IMAC_FINAL_7_7_Original <- read_excel("Data/Table1_INSERM_00052349_IMAC_FINAL_7_7_Original.xlsx", 
+Table1_INSERM_00052349_IMAC_FINAL_7_7_Original <- read_excel("data/Table1_INSERM_00052349_IMAC_FINAL_7_7_Original.xlsx", 
                                                             # range = cell_cols("D:I"), 
                                                              sheet = "Summary", skip = 5)
 
