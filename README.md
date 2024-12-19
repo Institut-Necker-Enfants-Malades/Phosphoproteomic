@@ -84,5 +84,5 @@ Le fichier Excel d'entrée doit contenir :
 
 - Les seuils de significance peuvent être ajustés (cutoff.pv et cutoff.fc)
 - L'analyse de consensus RSK2 recherche le motif RXRXXS*/T*
-- Les données d'axon regeneration sont téléchargées depuis AmiGO Solr API
+- Les données d'axon regeneration sont téléchargées depuis (AmiGO)[https://amigo.geneontology.org/amigo/term/GO:0031103] Solr API
 
