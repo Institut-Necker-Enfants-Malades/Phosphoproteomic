@@ -75,73 +75,21 @@ Le fichier Excel d'entrée doit contenir :
 ### Fonctions principales
 
 ```R
-#1. Conditions_Selection()
+### 1. Conditions_Selection()
 
 #Description : Permet d'afficher les conditions disponibles et demander une sélection pour eviter les erreurs de frappes.
 
-Paramètres :
-- `log2FC` : Dataframe des valeurs log2 fold-change
-- `pvalue` : Dataframe des p-values correspondantes
-
-**Retourne** : Un dataframe annoté avec :
-- Le nom de la condition coorespondant au chiffre séléctionner
-
 ### 2. Select_Diff()
-**Description** : Identifie les protéines/peptides différentiellement exprimés basé sur le log2 fold-change et la p-value.
-
-**Paramètres** :
-- `log2FC` : Dataframe des valeurs log2 fold-change
-- `pvalue` : Dataframe des p-values correspondantes
-- `metadata` : Tableau des métadonnées des protéines/peptides
-- `condition` : Condition d'intérêt (défaut : "Crush+shControl : Control")
-- `cutoff.fc` : Seuil log2 fold-change (défaut : 1.8)
-- `cutoff.pv` : Seuil p-value (défaut : 0.05)
-
-**Retourne** : Un dataframe annoté avec :
-- Classification en UP (surexprimé), DOWN (sous-exprimé), ou NO (non significatif)
-- Métadonnées fusionnées
-- Valeurs statistiques (log2FC, p-value)
+Description : Identifie les protéines/peptides différentiellement exprimés basé sur le log2 fold-change et la p-value.
 
 ### 2. Plot_Volcano()
-**Description** : Génère un volcano plot pour visualiser les changements d'expression.
-
-**Paramètres** :
-- `data` : Résultats de Select_Diff()
-- `cutoff.fc` : Seuil fold-change pour le highlighting
-- `cutoff.pv` : Seuil p-value pour le highlighting
-- `title` : Titre du graphique
-- `save` : Option pour sauvegarder le plot (défaut : FALSE)
-
-**Retourne** : Un ggplot object avec :
-- Points colorés selon la direction du changement (UP/DOWN)
-- Lignes de seuil pour FC et p-value
-- Labels pour les points significatifs
+Description : Génère un volcano plot pour visualiser les changements d'expression.
 
 ### 3. Make_Rpos_Consensus()
-**Description** : Analyse les séquences peptidiques pour identifier le motif consensus RSK2 (RXRXXS*/T*).
-
-**Paramètres** :
-- `data` : Dataframe contenant les séquences peptidiques
-- `Protein_Name` : Nom de la colonne contenant les noms de protéines
-- `Peptide_Localized` : Nom de la colonne contenant les séquences peptidiques
-
-**Retourne** : Un dataframe avec :
-- Classification des substrats (direct/two/three/plus)
-- Positions des arginines (R-3 et R-5)
-- Annotations du motif consensus
+Description : Analyse les séquences peptidiques pour identifier le motif consensus RSK2 (RXRXXS*/T*).
 
 ### 4. Plot_logo()
-**Description** : Crée une visualisation de logo pour les motifs de séquence.
-
-**Paramètres** :
-- `pep.seq` : Séquence(s) peptidique(s)
-- `method` : Méthode de visualisation ("bits" ou "prob")
-- `title` : Titre du logo plot
-
-**Retourne** : Un plot de logo montrant :
-- Fréquence des acides aminés à chaque position
-- Conservation des résidus
-- Motifs de séquence significatifs
+Description : Crée une visualisation de logo pour les motifs de séquence.
 
 ### Notes d'utilisation
 - Les fonctions sont conçues pour être utilisées séquentiellement dans l'analyse
