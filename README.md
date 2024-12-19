@@ -26,13 +26,9 @@ required_packages <- c(
 Copyproject/
 
 ├── scripts/
-
 │   ├── main_script.R
-
 │   └── Util_Phospo.R
-
 └── Data/
-
     └── Table1_INSERM_00052349_IMAC_FINAL_7_7_Original.xlsx
 
 ## `Utilisation`
